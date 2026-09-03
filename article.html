@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Artikel dan tulisan Ahmad Alzakki — teknologi, kampung halaman, dan kehidupan mahasiswa." />
+  <title>Article - Elzakki Portofolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">Elzakki Portofolio</a>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="article.html" class="active">Article</a></li>
+      </ul>
+      <div class="navbar-controls">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <button class="mode-trigger" id="modeTrigger" aria-label="Pilih mode">))</button>
+        <button class="mode-btn" id="modeBtn">Default</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="article.html" class="active">Article</a>
+    <button class="mobile-mode-btn" id="modeBtnMobile">Default</button>
+  </div>
+
+  <section class="page-hero">
+    <div class="container fade-in">
+      <span class="label">✦ Catatan dan Refleksi</span>
+      <h1>Artikel dan Tulisan</h1>
+      <p>Kumpulan tulisan tentang diri, orang tua, keluarga, teman, dan pendidikan.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="dual-panel">
+
+        <div class="panel-left">
+          <div class="article-main-grid">
+
+            <div class="article-card fade-in scroll-reveal">
+              <img class="article-card-img" src="Picture/artc1.jpg" alt="Bungsu" />
+              <div class="article-card-body">
+                <span class="badge">Langkah</span>
+                <h3>Anak Bungsu yang Melangkah Tanpa Tahu Akan Sampai di Mana</h3>
+                <p>Tidak ada peta, tidak ada jaminan, dan tidak ada arahan. Hanya tekad dan doa orang tua yang jadi
+                  bekal perjalanan ini.</p>
+                <div class="article-meta"><span>Ahmad Alzakki</span><span>·</span><span>Apr 2026</span><span>·</span><span>4 mnt</span></div>
+                <button class="btn btn-secondary btn-sm" style="margin-top:12px;" onclick="openModal('a1')">Baca Selengkapnya</button>
+              </div>
+            </div>
+
+            <div class="article-card fade-in fade-in-delay-1 scroll-reveal" data-delay="80">
+              <img class="article-card-img" src="Picture/artc2.jpg" alt="Orang Tua" />
+              <div class="article-card-body">
+                <span class="badge">Rindu</span>
+                <h3>Kehilangan yang Tidak Pernah Benar-benar Selesai Dirasakan</h3>
+                <p>Ada luka yang tidak terlihat tapi selalu terasa. Tentang rindu yang tidak tahu harus dikirim ke mana.</p>
+                <div class="article-meta"><span>Ahmad Alzakki</span><span>·</span><span>Mar 2026</span><span>·</span><span>5 mnt</span></div>
+                <button class="btn btn-secondary btn-sm" style="margin-top:12px;" onclick="openModal('a2')">Baca Selengkapnya</button>
+              </div>
+            </div>
+
+            <div class="article-card fade-in fade-in-delay-2 scroll-reveal" data-delay="160">
+              <img class="article-card-img" src="Picture/artc3.jpg" alt="Saudara" />
+              <div class="article-card-body">
+                <span class="badge">Keluarga</span>
+                <h3>Orang Pertama yang Ada dan Orang Terakhir yang Pergi</h3>
+                <p>Dalam setiap masalah ada yang menguatkan, dalam setiap kebahagiaan ada yang ikut merayakan. Itulah saudara.</p>
+                <div class="article-meta"><span>Ahmad Alzakki</span><span>·</span><span>Feb 2026</span><span>·</span><span>3 mnt</span></div>
+                <button class="btn btn-secondary btn-sm" style="margin-top:12px;" onclick="openModal('a3')">Baca Selengkapnya</button>
+              </div>
+            </div>
+
+            <div class="article-card fade-in fade-in-delay-3 scroll-reveal" data-delay="240">
+              <img class="article-card-img" src="Picture/UIN Suska Riau.png" alt="UIN Suska Riau"
+                style="object-fit:contain; background:#EEF2FF; padding:16px;" />
+              <div class="article-card-body">
+                <span class="badge">Kampus</span>
+                <h3>UIN Suska Riau: Tempat Ilmu dan Iman Tumbuh Bersama</h3>
+                <p>Bukan sekadar tempat kuliah. Di sini karakter dibentuk, wawasan dibuka, dan masa depan mulai dirancang.</p>
+                <div class="article-meta"><span>Ahmad Alzakki</span><span>·</span><span>Jan 2026</span><span>·</span><span>6 mnt</span></div>
+                <button class="btn btn-secondary btn-sm" style="margin-top:12px;" onclick="openModal('a4')">Baca Selengkapnya</button>
+              </div>
+            </div>
+
+            <div class="article-card fade-in scroll-reveal" data-delay="50">
+              <img class="article-card-img" src="Picture/artc4.jpg" alt="Sahabat" />
+              <div class="article-card-body">
+                <span class="badge">Perjalanan</span>
+                <h3>Sahabat Lama: Masih Dekat di Hati, Meski Jarak Sudah Berbeda</h3>
+                <p>Dulu selalu bareng, sekarang masing-masing sibuk dengan jalannya sendiri. Tapi persahabatan itu tidak kemana-mana.</p>
+                <div class="article-meta"><span>Ahmad Alzakki</span><span>·</span><span>Des 2025</span><span>·</span><span>7 mnt</span></div>
+                <button class="btn btn-secondary btn-sm" style="margin-top:12px;" onclick="openModal('a5')">Baca Selengkapnya</button>
+              </div>
+            </div>
+
+            <div class="article-card fade-in fade-in-delay-1 scroll-reveal" data-delay="120">
+              <img class="article-card-img" src="Picture/Sistem Informasi.jpg" alt="Sistem Informasi"
+                style="object-fit:contain; background:#EEF2FF; padding:16px;" />
+              <div class="article-card-body">
+                <span class="badge">Jurusan</span>
+                <h3>Sistem Informasi UIN Suska Riau: Lebih dari Sekadar Belajar Koding</h3>
+                <p>Di balik logo dan jargon Tindakan Nyata, ada prodi yang membentuk mahasiswa jadi pemecah masalah nyata di dunia digital.</p>
+                <div class="article-meta"><span>Ahmad Alzakki</span><span>·</span><span>Nov 2025</span><span>·</span><span>5 mnt</span></div>
+                <button class="btn btn-secondary btn-sm" style="margin-top:12px;" onclick="openModal('a6')">Baca Selengkapnya</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <aside class="panel-right">
+          <img src="Picture/4.jpeg" alt="Ahmad Alzakki" class="aside-profile-img" />
+          <div class="aside-body">
+            <h3>Biodata</h3>
+            <p><strong>Nama</strong>: Ahmad Alzakki</p>
+            <p><strong>Asal</strong>: Rokan Hulu, Riau</p>
+            <p><strong>Status</strong>: Mahasiswa Aktif</p>
+            <p><strong>Jurusan</strong>: Sistem Informasi</p>
+            <p><strong>Kampus</strong>: UIN Suska Riau</p>
+            <p><strong>Angkatan</strong>: 2024</p>
+          </div>
+          <div class="aside-body">
+            <h3>Study Club</h3>
+            <img src="Picture/Predatech.jpg" alt="UIN Suska Riau"
+              style="width:100%; object-fit:contain; background:var(--bg-section); padding:12px; border-radius:10px; margin-bottom:10px;" />
+            <p>Puzzle Research Data Technology</p>
+          </div>
+          <div class="aside-body">
+            <h3>Hubungi Saya</h3>
+            <div class="aside-social">
+              <a href="mailto:alzakki624@gmail.com">E-Mail</a>
+              <a href="https://wa.me/qr/NRQJE35KMIVWI1" target="_blank">What'sApp</a>
+              <a href="https://www.instagram.com/zakki_ky?igsh=NWJoYWFzNnN1YWN1" target="_blank">Instagram</a>
+              <a href="https://www.tiktok.com/@zakki.24?_t=ZS-908duZ1VeLQ&_r=1" target="_blank">TikTok</a>
+            </div>
+          </div>
+          <div class="aside-body">
+            <h3>Quotes</h3>
+            <p>"Ide yang ditulis adalah ide yang hidup. Setiap refleksi dan insight diabadikan, mengubah pikiran sesaat
+              menjadi daya berkelanjutan."</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Elzakki Portofolio</div>
+          <p>Mahasiswa Sistem Informasi Universitas Islam Negeri Sultan Syarif Kasim Riau yang memiliki semangat
+            membangun karya digital dengan membuat kenyamanan dalam mengisi hati sebagai kehangatan.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="mailto:alzakki624@gmail.com">alzakki624@gmail.com</a></li>
+            <li><a href="https://wa.me/qr/NRQJE35KMIVWI1" target="_blank">082268812389</a></li>
+            <li><a href="https://maps.app.goo.gl/m5msif5nFXpnEiLt5" target="_blank">Rokan Hulu, Riau</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-comment">
+          <h4>Komentar</h4>
+          <form class="comment-form" onsubmit="submitComment(event)">
+            <input type="text" class="comment-input" placeholder="Nama" required />
+            <input type="email" class="comment-input" placeholder="E-Mail" required />
+            <textarea class="comment-textarea" placeholder="Pesan" rows="3" required></textarea>
+            <div class="comment-actions">
+              <button type="submit" class="btn btn-primary btn-sm">Kirim</button>
+              <button type="reset" class="btn btn-secondary btn-sm">Batalkan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright © 2026 Ahmad Alzakki. All rights reserved.</span>
+        <span>Dibuat dengan sepenuh hati dari anak Rokan Hulu.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODALS — di luar semua card, langsung di dalam body ===== -->
+
+  <div id="a1" class="modal-overlay" onclick="handleOverlay(event,'a1')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('a1')">Tutup</button>
+      <span class="badge">Langkah</span>
+      <h2 class="modal-title">Anak Bungsu yang Melangkah Tanpa Tahu Akan Sampai di Mana</h2>
+      <div class="modal-meta">Ahmad Alzakki · April 2026 · 4 menit baca</div>
+      <img class="modal-img" src="Picture/artc1.jpg" alt="Bungsu" />
+      <div class="modal-content">
+        <p>Menjadi anak bungsu itu tidak selalu berarti paling dimanja. Kadang justru jadi yang paling banyak melihat, paling banyak belajar dari perjalanan kakak-kakak sebelumnya, tapi tetap harus mencari jalan sendiri karena setiap orang punya takdirnya masing-masing.</p>
+        <p>Saya tidak pernah benar-benar tahu perjalanan ini akan berujung di mana. Tidak ada yang menjamin bahwa setiap langkah yang diambil sudah pasti benar. Tapi justru di situlah letak perjuangannya. Melangkah bukan karena yakin jalan di depan itu mulus, tapi karena diam di tempat bukan pilihan yang bisa diterima.</p>
+        <p>Setiap pencapaian yang ada sampai hari ini bukan datang dari rencana besar yang tersusun rapi. Semuanya datang dari keberanian untuk terus mencoba meski berkali-kali tidak tahu harus ke mana. Ada masa di mana satu-satunya pegangan adalah doa ibu yang selalu terselip di akhir setiap pembicaraan, dan keyakinan bahwa usaha tidak pernah benar-benar sia-sia.</p>
+        <p>Perjalanan ini belum selesai. Bahkan mungkin belum sampai di separuhnya. Tapi sejauh ini, saya belajar bahwa tidak apa-apa untuk tidak tahu segalanya di awal. Yang penting adalah tetap jalan, tetap belajar, dan tetap bersyukur untuk setiap langkah kecil yang sudah berhasil dilewati.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="a2" class="modal-overlay" onclick="handleOverlay(event,'a2')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('a2')">Tutup</button>
+      <span class="badge">Rindu</span>
+      <h2 class="modal-title">Kehilangan yang Tidak Pernah Benar-benar Selesai Dirasakan</h2>
+      <div class="modal-meta">Ahmad Alzakki · Maret 2026 · 5 menit baca</div>
+      <img class="modal-img" src="Picture/artc2.jpg" alt="Orang Tua" style="object-fit:contain; background:#EEF2FF; padding:20px;" />
+      <div class="modal-content">
+        <p>Kehilangan orang tua itu bukan sesuatu yang bisa dijelaskan dengan kata-kata yang cukup. Tidak peduli seberapa banyak orang bilang "sabar" atau "ikhlas", tetap ada bagian di dalam diri yang butuh waktu sangat lama untuk benar-benar menerima bahwa mereka sudah tidak ada.</p>
+        <p>Yang paling berat bukan saat pertama kali tahu kabarnya. Yang paling berat adalah momen-momen kecil sesudahnya. Saat ada kabar baik yang ingin dibagi tapi tidak ada lagi nomor yang bisa dihubungi. Saat hari raya datang dan meja makan terasa berbeda. Saat ada masalah yang biasanya cukup diselesaikan hanya dengan duduk bersama mereka, tapi sekarang harus dihadapi sendiri.</p>
+        <p>Orang tua meninggalkan banyak hal. Bukan hanya kenangan, tapi juga nilai-nilai yang tanpa sadar sudah tertanam jauh sebelum kita mengerti artinya. Cara mereka berbicara, cara mereka bersabar, cara mereka mencintai keluarga tanpa banyak berkata-kata. Semua itu hidup terus di dalam diri, dan itu mungkin cara mereka untuk tetap ada meski jasadnya sudah pergi.</p>
+        <p>Rindu itu nyata. Dan tidak ada salahnya untuk mengakui bahwa kehilangan mereka meninggalkan luka yang mendalam. Tapi di balik luka itu, ada juga rasa syukur yang besar karena pernah punya mereka, meski tidak sepanjang yang diinginkan.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="a3" class="modal-overlay" onclick="handleOverlay(event,'a3')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('a3')">Tutup</button>
+      <span class="badge">Keluarga</span>
+      <h2 class="modal-title">Orang Pertama yang Ada dan Orang Terakhir yang Pergi</h2>
+      <div class="modal-meta">Ahmad Alzakki · Februari 2026 · 3 menit baca</div>
+      <img class="modal-img" src="Picture/artc3.jpg" alt="Saudara" />
+      <div class="modal-content">
+        <p>Ada hubungan yang terbentuk bukan karena pilihan, tapi justru karena itulah ia menjadi salah satu yang paling kuat. Saudara kandung adalah orang-orang yang melihat kita dari sejak kita belum tahu apa-apa tentang dunia, dan tetap ada sampai kita sudah cukup besar untuk berjalan sendiri.</p>
+        <p>Kebersamaan dalam keluarga tidak selalu datang dalam bentuk momen-momen besar. Kadang justru hadir dalam hal yang paling biasa. Makan bersama sambil ribut soal lauk, saling ledek tanpa maksud menyakiti, diam-diam membantu satu sama lain tanpa diminta. Semua itu yang akhirnya membangun ikatan yang susah dijelaskan tapi sangat terasa.</p>
+        <p>Ketika ada masalah, saudara adalah tempat pertama yang terlintas. Bukan karena mereka selalu punya jawaban, tapi karena kehadirannya saja sudah cukup membuat semuanya terasa lebih ringan. Dan ketika ada kebahagiaan, menceritakannya kepada saudara terasa berbeda dibanding bercerita kepada siapa pun. Ada ketulusan yang sulit dicari di tempat lain.</p>
+        <p>Saya bersyukur punya saudara-saudara yang tidak hanya hadir di momen bahagia, tapi juga yang tidak pernah pergi saat momen itu sedang tidak baik-baiknya. Kebersamaan itu bukan sesuatu yang datang sendiri, tapi sesuatu yang dijaga bersama setiap harinya.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="a4" class="modal-overlay" onclick="handleOverlay(event,'a4')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('a4')">Tutup</button>
+      <span class="badge">Kampus</span>
+      <h2 class="modal-title">UIN Suska Riau: Tempat Ilmu dan Iman Tumbuh Bersama</h2>
+      <div class="modal-meta">Ahmad Alzakki · Januari 2026 · 6 menit baca</div>
+      <img class="modal-img" src="Picture/UIN Suska Riau.png" alt="UIN Suska Riau" style="object-fit:contain; background:#EEF2FF; padding:20px;" />
+      <div class="modal-content">
+        <p>Universitas Islam Negeri Sultan Syarif Kasim Riau bukan sekadar nama kampus yang tertulis di kartu mahasiswa. Bagi saya, UIN Suska Riau adalah tempat di mana banyak hal mulai masuk akal. Mulai dari cara berpikir yang lebih luas, cara menyikapi perbedaan, sampai cara memahami bahwa ilmu pengetahuan dan nilai keislaman bisa berjalan beriringan tanpa harus saling bertentangan.</p>
+        <p>Kampus ini punya semangat yang khas. Mahasiswanya datang dari berbagai daerah, membawa latar belakang yang berbeda-beda, tapi disatukan oleh satu tujuan yang sama yaitu belajar dan berkembang. Di sinilah pertama kali saya merasakan bagaimana lingkungan yang baik bisa mendorong seseorang untuk terus mau lebih baik dari hari sebelumnya.</p>
+        <p>Selain suasana akademiknya, yang membuat UIN Suska Riau berkesan adalah bagaimana kampus ini mengajarkan keseimbangan. Tidak hanya soal nilai dan IPK, tapi juga soal karakter, tanggung jawab, dan kontribusi. Di sini, mahasiswa didorong untuk tidak hanya pintar di kelas, tapi juga berguna di luar kelas.</p>
+        <p>Menjadi bagian dari UIN Suska Riau adalah sesuatu yang saya syukuri. Perjalanan kuliah di sini bukan hanya soal gelar yang akan didapat di akhir, tapi soal proses panjang yang membentuk siapa saya sekarang dan siapa yang ingin saya jadi ke depannya.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="a5" class="modal-overlay" onclick="handleOverlay(event,'a5')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('a5')">Tutup</button>
+      <span class="badge">Perjalanan</span>
+      <h2 class="modal-title">Sahabat Lama: Masih Dekat di Hati, Meski Jarak Sudah Berbeda</h2>
+      <div class="modal-meta">Ahmad Alzakki · Desember 2025 · 7 menit baca</div>
+      <img class="modal-img" src="Picture/artc4.jpg" alt="Sahabat" />
+      <div class="modal-content">
+        <p>Ada satu fase dalam hidup yang tidak banyak orang siap menghadapinya, yaitu saat persahabatan yang dulu terasa tidak terpisahkan mulai berubah tanpa ada yang benar-benar minta atau menginginkannya. Bukan karena ada masalah, bukan karena ada salah satu yang berbuat salah. Tapi semata-mata karena hidup masing-masing sudah mulai berjalan ke arah yang berbeda.</p>
+        <p>Waktu sekolah dulu, semua terasa lebih mudah. Setiap hari ketemu, setiap masalah dihadapi bareng, setiap tawa juga dibagi bareng. Tidak ada jarak, tidak ada kesibukan yang benar-benar memisahkan. Tapi setelah tamat, semuanya perlahan berubah. Ada yang lanjut kuliah dan mulai tenggelam dalam dunia perkuliahannya. Ada yang masuk kerja, bahkan ada yang memilih jalan sebagai anggota militer dan jadwalnya tidak lagi bisa ditebak. Ada yang buka usaha dan pikirannya sudah penuh dengan urusan bisnis setiap harinya. Dan ada yang sudah menikah, membangun keluarga, mengurus anak sambil tetap menjalankan pekerjaan atau usahanya.</p>
+        <p>Sekarang, chat yang dulu aktif setiap menit kadang bisa sepi berhari-hari. Kumpul yang dulu hampir setiap minggu sekarang menjadi sesuatu yang harus dijadwalkan jauh-jauh hari dan tetap sering tidak jadi karena satu dan lain hal. Tapi anehnya, setiap kali berhasil ketemu meski sebentar, rasanya seperti tidak ada yang berubah. Obrolan langsung nyambung, tawa langsung meledak, dan semuanya terasa seperti kembali ke masa sekolah dulu.</p>
+        <p>Mungkin itulah yang namanya persahabatan yang sesungguhnya. Bukan yang selalu ada setiap saat, tapi yang tidak pernah benar-benar pergi meski waktu dan jarak sudah memisahkan sejauh apapun.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="a6" class="modal-overlay" onclick="handleOverlay(event,'a6')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('a6')">Tutup</button>
+      <span class="badge">Jurusan</span>
+      <h2 class="modal-title">Sistem Informasi UIN Suska Riau: Lebih dari Sekadar Belajar Koding</h2>
+      <div class="modal-meta">Ahmad Alzakki · November 2025 · 5 menit baca</div>
+      <img class="modal-img" src="Picture/Sistem Informasi.jpg" alt="Sistem Informasi" style="object-fit:contain; background:#EEF2FF; padding:20px;" />
+      <div class="modal-content">
+        <p>Banyak orang mengira Sistem Informasi itu isinya hanya belajar coding seharian. Padahal kenyataannya jauh lebih luas dari itu. Prodi Sistem Informasi di Fakultas Sains dan Teknologi UIN Suska Riau adalah tempat di mana berbagai disiplin ilmu dipadukan menjadi satu kesatuan yang saling melengkapi.</p>
+        <p>Di sini, mahasiswa tidak hanya belajar membangun sistem, aplikasi, dan website dari nol. Mereka juga belajar bagaimana mengelola dan menganalisis data, memahami konsep Data Science, Data Analytics, kecerdasan buatan, hingga Machine Learning. Selain itu, ada juga ilmu manajemen, organisasi, dan jaringan komputer yang semuanya digabung dalam satu kurikulum yang dirancang untuk mencetak lulusan yang siap menghadapi tantangan dunia digital yang terus berubah. Bahkan karena berada di bawah fakultas yang disatukan dengan teknik, cara berpikir sistematis dan solutif sudah menjadi bagian dari budaya belajar sehari-hari.</p>
+        <p>Lebih dari sekadar kurikulum, Sistem Informasi UIN Suska Riau juga punya wadah bagi mahasiswanya untuk berkembang lewat Himpunan Mahasiswa Sistem Informasi atau yang dikenal dengan HIMASI. Di sinilah mahasiswa belajar berorganisasi, menggerakkan kegiatan, dan membuktikan bahwa ilmu yang dipelajari di kelas bisa benar-benar bermanfaat di luar kelas.</p>
+        <p>Jargon prodi ini adalah Tindakan Nyata, dan itu bukan sekadar slogan. Ia adalah pengingat bahwa belajar saja tidak cukup. Yang membedakan adalah seberapa besar keberanian untuk mengubah ilmu itu menjadi sesuatu yang benar-benar terasa dampaknya, bagi diri sendiri maupun bagi orang-orang di sekitar.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
